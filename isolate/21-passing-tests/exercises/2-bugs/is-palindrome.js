@@ -11,11 +11,14 @@ console.log('-- begin --');
  * @returns {boolean} Is the string a palindrome?
  */
 const isPalindrome = (toCheck = '') => {
-  let reversed = ' ';
+  let reversed = '';
   for (const character of toCheck) {
-    reversed += character + reversed;
+    reversed = character + reversed;
+  } if (reversed !== toCheck) {
+    return false;
+  } else {
+    return true;
   }
-  return (toCheck = reversed);
 };
 
 // the test cases are correct!
