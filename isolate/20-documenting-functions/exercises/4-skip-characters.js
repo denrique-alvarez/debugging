@@ -4,7 +4,9 @@
 console.log('-- begin --');
 
 /**
- *
+ * @param {string} [text = ''] - String where to extract some characters from.
+ * @param {number} [toSkip = 1] - Base number which multiples will be guide the index to select characters to be removed.
+ * @returns {string} - New string without selected characters.
  */
 const skipCharacters = (text = '', toSkip = 1) => {
   if (toSkip < 1) {
