@@ -11,12 +11,12 @@ console.log('-- begin --');
  * @returns {boolean} Is the string a palindrome?
  */
 const isPalindrome = (toCheck = '') => {
-  let itIs = _;
+  let itIs = true;
   for (let i = 0; i <= toCheck.length / 2; i++) {
     const left = toCheck[i];
     const right = toCheck[toCheck.length - 1 - i];
-    if (_) {
-      itIs = _;
+    if (left !== right) {
+      itIs = false;
       break;
     }
   }
