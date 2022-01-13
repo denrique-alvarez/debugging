@@ -19,8 +19,8 @@ const skipCharacters = (text = '', toSkip = 1) => {
   let skipified = '';
   let index = 0;
   for (const character of text) {
-    if (++index % toSkip === 0) {
-      skipified += character;
+    if (index++ % toSkip !== 0) {
+      skipified = skipified + character;
     }
   }
   return skipified;
