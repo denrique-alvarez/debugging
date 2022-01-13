@@ -11,11 +11,11 @@ console.log('-- begin --');
  * @returns {number} how many times the character appears in the text
  */
 const countCharacter = (text = '', toCount = '') => {
-  let count = _;
-  if (_._ === _) {
+  let count = - 1;
+  if (toCount.length === 1) {
     count++;
     for (const character of text) {
-      if (character === _) {
+      if (character === toCount) {
         count++;
       }
     }
