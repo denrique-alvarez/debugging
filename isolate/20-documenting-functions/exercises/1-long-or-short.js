@@ -4,11 +4,11 @@
 console.log('-- begin --');
 
 /**
- * _
+ * This function calculates if the length of a string is to long or short depending on a given parameter.
  *
- * @_ {_} [_=_] - _
- * @_ {_} [_=_] - _
- * @_ {_} _
+ * @param {string} [text = ''] - The text to be measured.
+ * @param {number} [cutoff = 0] - Number of characters that evaluate the string.
+ * @returns {string} A string with the result of the measure. Only two possibilities: long or short.
  */
 const longOrShort = (text = '', cutoff = 0) => {
   if (text.length < cutoff) {
