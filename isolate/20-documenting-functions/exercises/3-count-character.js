@@ -4,7 +4,9 @@
 console.log('-- begin --');
 
 /**
- *
+ * @param {string} [text = ''] - String that would be checked for a particular character.
+ * @param {string} [toCount = ''] - The character to look for in the first string.
+ * @returns {number} - The number of characters of the second string found in the first one. It will return -1 if there is more than one or no character to look for. 
  */
 const countCharacter = (text = '', toCount = '') => {
   if (toCount.length !== 1) {
